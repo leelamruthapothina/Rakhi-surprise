@@ -270,7 +270,7 @@
     display: grid;
 
     /* ⭐ THREE PHOTOS SIDE BY SIDE */
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 10px;
 }
@@ -329,12 +329,22 @@
 @media (max-width: 500px) {
 
     .memory-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    display: grid;
 
-    .memory-item img {
-        height: 120px;
-    }
+    /* ⭐ TWO PHOTOS PER ROW */
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+   .memory-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 9px;
+    display: block;
+}
 
 }
 /* ============================= */
@@ -646,7 +656,7 @@ Loveeeee you so much bubbaaaahhh❤️‍🩹💗🫂🧿
 
         <div class="memory-item">
             <img src="photo4.jpg" alt="Memory 4">
-            <p>This onee ❤️</p>
+            <p>THis onee ❤️</p>
         </div>
 
         <div class="memory-item">
